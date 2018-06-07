@@ -25,7 +25,7 @@ public class CoinDefinition {
     }
     public static final CoinPrecision coinPrecision = CoinPrecision.Coins;
 
-    public static final String UNSPENT_API_URL = "https://chainz.cryptoid.info/bsd/api.dws?q=unspent";
+    public static final String UNSPENT_API_URL = "https://chainz.cryptoid.info/urals/api.dws?q=unspent";
     public enum UnspentAPIType {
         BitEasy,
         Blockr,
@@ -34,7 +34,7 @@ public class CoinDefinition {
     };
     public static final UnspentAPIType UnspentAPI = UnspentAPIType.Cryptoid;
 
-    public static final String BLOCKEXPLORER_BASE_URL_PROD = "http://exp.uralscoin.info/";
+    public static final String BLOCKEXPLORER_BASE_URL_PROD = "http://exp.uralscoin.info:3001/";
     public static final String BLOCKEXPLORER_ADDRESS_PATH = "address/";
     public static final String BLOCKEXPLORER_TRANSACTION_PATH = "tx/";
     public static final String BLOCKEXPLORER_BLOCK_PATH = "block/";
@@ -93,7 +93,7 @@ public class CoinDefinition {
     public static final long PacketMagic = 0xa3d5c2f9;
 
     // Forks
-    static public long FORK_X17 = 1477958400; // BitSend PoW Hardfork, 11/01/2016 @ 12:00am (UTC)
+    static public long FORK_X17 = 1477958400; // Urals Hardfork, 11/01/2016 @ 12:00am (UTC)
 
     static public long genesisBlockDifficultyTarget = 0x1e0ffff0L;
     static public long genesisBlockTime = 1504224000L;
@@ -106,9 +106,11 @@ public class CoinDefinition {
     static public String genesisTxOutBytes = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
 
     static public String[] dnsSeeds = new String[] {
-            "195.54.3.213",
-	    "151.248.118.2",
-	    "185.20.225.229",
+        "162.213.250.203",
+	"5.149.254.22",
+	"5.149.254.11",
+	"77.220.215.168",
+	    
     };
 
     public static int minBroadcastConnections = 0;
@@ -176,7 +178,7 @@ public class CoinDefinition {
     static public long testnetGenesisBlockNonce = (293736);
 
     static public String[] testnetDnsSeeds = new String[] {
-            "195.54.3.213",
+            "162.213.250.203",
     };
 
     public static final String TESTNET_SATOSHI_KEY = "04517d8a699cb43d3938d7b24faaff7cda448ca4ea267723ba614784de661949bf632d6304316b244646dea079735b9a6fc4af804efb4752075b9fe2245e14e412";
