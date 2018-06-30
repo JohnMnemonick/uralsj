@@ -72,8 +72,8 @@ public class CoinDefinition {
 
     public static final long INSTANTX_FEE = 1000000;
 
-    public static final int PROTOCOL_VERSION = 70082;
-    public static final int MIN_PROTOCOL_VERSION = 70082;
+    public static final int PROTOCOL_VERSION = 70083;
+    public static final int MIN_PROTOCOL_VERSION = 70083;
 
     public static final int BLOCK_CURRENTVERSION = 3;
     public static final int MAX_BLOCK_SIZE = 10000000;
@@ -178,7 +178,7 @@ public class CoinDefinition {
     static public long testnetGenesisBlockNonce = (293736);
 
     static public String[] testnetDnsSeeds = new String[] {
-            "162.213.250.203",
+            "5.149.254.11",
     };
 
     public static final String TESTNET_SATOSHI_KEY = "04517d8a699cb43d3938d7b24faaff7cda448ca4ea267723ba614784de661949bf632d6304316b244646dea079735b9a6fc4af804efb4752075b9fe2245e14e412";
