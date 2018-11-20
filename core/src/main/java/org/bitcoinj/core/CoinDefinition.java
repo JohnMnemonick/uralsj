@@ -90,8 +90,8 @@ public class CoinDefinition {
     public static final int p2shHeader = 5;
     public static final boolean allowBitcoinPrivateKey = false;
     public static final int dumpedPrivateKeyHeader = 128;
-    public static final long PacketMagic = 0xa3d5c2f9;
-
+    //public static final long PacketMagic = 0xa3d5c2f9;
+    public static final long PacketMagic = 0xa4d6c3f0;
     // Forks
     static public long FORK_X17 = 1477958400; // Urals Hardfork, 11/01/2016 @ 12:00am (UTC)
 

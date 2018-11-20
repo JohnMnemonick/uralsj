@@ -843,14 +843,14 @@ public abstract class AbstractBlockChain {
                 return; // skip difficulty checks
 
             DUAL_KGW3(storedPrev, nextBlock);
-        } else { // MainNet
-            // BitSend: skip difficulty checks before block 139975
-            if (height < 139975)
-                return;
-            if (height < 239000)
-                KimotoGravityWell3(storedPrev, nextBlock);
-            else
-                DUAL_KGW3(storedPrev, nextBlock);
+        //} else { // MainNet
+            // Urals: skip difficulty checks before block 139975
+        //    if (height < 139975)
+        //        return;
+        //    if (height < 239000)
+        //        KimotoGravityWell3(storedPrev, nextBlock);
+        //    else
+        //        DUAL_KGW3(storedPrev, nextBlock);
         }
     }
 
